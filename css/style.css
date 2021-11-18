@@ -74,8 +74,10 @@ a:active { /* selected link */
   background-color: #4fc3f7;
   color: #ffffff;
 }
+img {
+  width: 100%;
+}
   }
-</style>
 /*
 Colors used:
 Primary Color (Grey Blue): #4fc3f7;
