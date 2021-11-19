@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   font-family:  'Open Sans', sans-serif;
@@ -5,6 +8,40 @@ font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+}
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+padding: 10px 0;
+  padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+postion: relative;
+  }
+nav > ul > li {
+  list-style-type: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+ font-weight: 700;
+ color: #4a4a4a;
+  display: inline-block;
+}
+nav > ul > li > a:hover,
+a:focus {
+  color: #00B3D7;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+nav > ul > li > a:visited { /* visited link */
+  color: ##59FBDA;
+}
+nav > ul > li > a:active { /* selected link */
+  color: ##0068B8;
 }
 img {
   width: 100%;
@@ -122,3 +159,30 @@ Secondary Color (Light Blue): #e1f5fe;
 Secondary Light : #e1f5fe;
 Secondary Dark : #afc2cb;
 */
+/* Layout styling */
+}
+  .container {
+    padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#work h2 {
+  text-align: center; /* Centers text */
+}
+#hero h1 {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+display: inline-block;
+width: 100%;
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+main {
+  padding-top: 133px;
+}
