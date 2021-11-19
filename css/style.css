@@ -8,12 +8,13 @@ font-size: 16px; /* Sets the font size to 16px */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
+img {
+  width: 50%;
+}
 h1 {
   color: navy;
   margin-left: 20px;
 }
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -50,7 +51,21 @@ a:visited { /* visited link */
 a:active { /* selected link */
   color: ##0068B8;
 }
-.button {
+.button1:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button1.contact {
+  background-color: transparent;
+  color: #4fc3f7;
+  text-transform: uppercase;
+  border: 2px solid #8bf6ff;
+}
+.button1.contact:hover {
+  background-color: #4fc3f7;
+  color: #ffffff;
+}
+.button1 {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #0068B8;
   color: #59FBDA; /* needed to override the default link color */
@@ -59,25 +74,46 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #59FBDA; /* width of the border, type, color */
   transition: 0.2s opacity;
-}
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-.button.contact {
+  }
+.button2.contact {
   background-color: transparent;
-  color: #4fc3f7;
+  color: #FA8072;
   text-transform: uppercase;
-  border: 2px solid #8bf6ff;
+  border: 2px solid #663399;
 }
-.button.contact:hover {
-  background-color: #4fc3f7;
+.button2.contact:hover {
+  background-color: #663399;
   color: #ffffff;
 }
-img {
-  width: 100%;
+.button2 {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #FA8072;
+  color: #663399; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #663399; /* width of the border, type, color */
+  transition: 0.2s opacity;
 }
-  }
+.button3.contact {
+background-color: transparent;
+color: #4fc3f7;
+text-transform: uppercase;
+border: 2px solid #e1f5fe;
+}
+.button3.contact:hover {
+background-color: #663399;
+color: #ffffff;
+}
+.button3 {
+display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+background-color: #4fc3f7;
+color: #e1f5fe; /* needed to override the default link color */
+font-weight: 400;
+padding: 10px;
+border-radius: 3px;
+border-bottom: 2px solid #e1f5fe; /* width of the border, type, color */
+transition: 0.2s opacity;
 /*
 Colors used:
 Primary Color (Grey Blue): #4fc3f7;
