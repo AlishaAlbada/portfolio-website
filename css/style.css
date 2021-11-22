@@ -251,6 +251,6 @@ footer .email {
   /* Centers text */
 }
 #work img {
-  max-width: 200px margin: 0 auto;
+  max-width: 200px; margin: 0 auto;
   display: block;
 }
