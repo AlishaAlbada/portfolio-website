@@ -56,7 +56,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #00B3D7;
+  color: #003453;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -208,7 +208,7 @@ a:focus {
 
 nav>ul>li>a:visited {
   /* visited link */
-  color: #59FBDA;
+  color: #ffffff;
 }
 
 nav>ul>li>a:active {
