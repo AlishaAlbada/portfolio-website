@@ -175,6 +175,10 @@ a:active {
   max-width: 200px;
   text-align: center;
 }
+.flourish {
+  max-width: 400px;
+  text-align: center;
+}
 
 header {
   background-color: #B1D4E0;
