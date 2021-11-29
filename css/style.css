@@ -267,7 +267,7 @@ footer .email {
   display: block;
 }
 #work svg {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   display: block;
 }
@@ -403,15 +403,15 @@ footer .email {
 
   @keyframes color-change {
     from {
-      fill: #edc655;
+      fill: #2b4b24;
     }
 
     to {
-      fill: #f76414;
+      fill: #9E7A0D;
     }
   }
 
-  .sun {
+  .tree {
     animation-duration: 4s;
     animation-name: color-change;
     animation-iteration-count: infinite;
@@ -422,8 +422,8 @@ footer .email {
     from {transform: translate(0,50px);}
     to {transform: translate(200px,50px);}
   }
-  .cloud-front {
-  animation-duration: 30s;
+  .cloud1 {
+  animation-duration: 5s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -433,6 +433,6 @@ footer .email {
   from {transform: translate(446px,48px);}
   to {transform: translate(100px, 48px);}
 }
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.cloud2 {
+  animation: 7s cloud-move-reverse infinite alternate linear;
 }
