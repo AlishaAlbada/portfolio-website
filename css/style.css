@@ -63,7 +63,7 @@ a:focus {
 
 a:visited {
   /* visited link */
-  color: #59FBDA;
+  color: #CCF6FF;
 }
 
 a:active {
@@ -134,9 +134,9 @@ a:active {
 
 .button3.contact {
   background-color: transparent;
-  color: #4fc3f7;
+  color: #B1D4E0;
   text-transform: uppercase;
-  border: 2px solid #e1f5fe;
+  border: 2px solid #2F4858;
 }
 
 .button3.contact:hover {
@@ -146,12 +146,12 @@ a:active {
 
 .button3 {
   display: inline-block;
-  background-color: #4fc3f7;
-  color: #e1f5fe;
+  background-color: #B1D4E0;
+  color: #4FC3F7;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #e1f5fe;
+  border-bottom: 2px solid #2F4858;
   transition: 0.2s opacity;
 }
 
