@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/e026a2f39b.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <title>Alisha Albada UX/UI Designer Boulder CO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +17,7 @@
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavToggle">
       <picture>
         <source srcset="img/Icons/AA_logo.png" media="(max-width:767px)" />
         <img class="logo" src="img/Icons/AA_logo.png" alt="Alisha Logo" />
@@ -25,8 +27,10 @@
           <li><a href="Index.html">Work</a></li>
           <li><a href="Contact_Alisha.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
@@ -96,16 +100,9 @@
           <div class="column col-md-6 col-lg-7">
             <!--Column-->
             <svg id="about-picture" height="auto" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1000 666.66669" sodipodi:docname="4961760.eps">
-              <metadata id="metadata8">
-                    <dc:format>image/svg+xml</dc:format>
-                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-                  </cc:Work>
-              </metadata>
+              viewBox="0 0 1000 666.66669" >
               <defs id="defs6" />
-              <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="640"
-                inkscape:window-height="480" id="namedview4" />
-              <g id="g10" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX" transform="matrix(1.3333333,0,0,-1.3333333,0,666.66667)">
+              <g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,666.66667)">
                 <g id="g12" transform="scale(0.1)">
                   <path d="M 7500,0 H 0.00390625 V 5000 H 7500 V 0" style="fill:#ace2ec;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path14" />
                   <path d="m 4028.73,4276.84 c 0,-167.15 -135.51,-302.67 -302.67,-302.67 -167.16,0 -302.68,135.52 -302.68,302.67 0,167.17 135.52,302.68 302.68,302.68 167.16,0 302.67,-135.51 302.67,-302.68"
@@ -733,8 +730,7 @@
                 </g>
               </g>
             </svg>
-
-          </div>
+</div>
           <div class="column col-md-6 col-lg-5">
             <!--Column-->
             <h3>Animation</h3>
@@ -774,6 +770,7 @@
       <p>&copy; 2021 Alisha Albada</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

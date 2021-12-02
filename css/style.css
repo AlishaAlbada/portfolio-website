@@ -61,11 +61,6 @@ a:focus {
   /* Underlining when hovering over a link */
 }
 
-a:visited {
-  /* visited link */
-  color: #CCF6FF;
-}
-
 a:active {
   /* selected link */
   color: #0068B8;
@@ -120,7 +115,7 @@ a:active {
 .button2 {
   display: inline-block;
   background-color: #05445E;
-  color: #D4F1F4;
+  color: #FFFFFF;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -147,7 +142,7 @@ a:active {
 .button3 {
   display: inline-block;
   background-color: #B1D4E0;
-  color: #4FC3F7;
+  color: #FFFFFF;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -172,9 +167,10 @@ a:active {
 
 /* :::::::::::::::::::::::::::: header */
 .logo {
-  max-width: 200px;
-  text-align: center;
+  max-width: 150px;
+  min-width: 641px; text-align: center;
 }
+
 .flourish {
   max-width: 400px;
   text-align: center;
@@ -182,7 +178,6 @@ a:active {
 
 header {
   background-color: #B1D4E0;
-  text-align: center;
   padding: 10px 0;
   padding-top: 10px;
   padding-right: 5px;
@@ -195,7 +190,32 @@ header {
   position: relative;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
 nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
   margin-left: 0;
   padding-left: 0;
 }
@@ -206,7 +226,6 @@ nav>ul>li {
   text-transform: uppercase;
   font-weight: 700;
   color: #F7EBFF;
-  display: inline-block;
 }
 
 nav>ul>li>a:hover,
@@ -266,6 +285,7 @@ footer .email {
   margin: 0 auto;
   display: block;
 }
+
 #work svg {
   max-width: 300px;
   margin: 0 auto;
@@ -322,117 +342,70 @@ footer .email {
     width: 100%;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
-  }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+    nav>ul>li {}
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px 0;
-  }
-
-  #about-page h3 {
-    margin-top: 0;
-  }
-
-  /*For large screen */
-  @media screen and (min-width:1024px) {}
-
-  @media only screen and (min-width: 1440px) {}
-
-  .col-lg-1 {
-    width: 8.33%;
-  }
-
-  .col-lg-2 {
-    width: 16.66%;
-  }
-
-  .col-lg-3 {
-    width: 25%;
-  }
-
-  .col-lg-4 {
-    width: 33.33%;
-  }
-
-  .col-lg-5 {
-    width: 41.66%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
-
-  .col-lg-7 {
-    width: 58.33%;
-  }
-
-  .col-lg-8 {
-    width: 66.66%;
-  }
-
-  .col-lg-9 {
-    width: 75%;
-  }
-
-  .col-lg-10 {
-    width: 83.33%;
-  }
-
-  .col-lg-11 {
-    width: 91.66%;
-  }
-
-  .col-lg-12 {
-    width: 100%;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @keyframes color-change {
-    from {
-      fill: #2b4b24;
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
     }
 
-    to {
-      fill: #9E7A0D;
+    [class*="col-"] {
+      float: left;
+      padding: 10px 0;
     }
-  }
 
-  .tree {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
-  .cloud1 {
-  animation-duration: 5s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud2 {
-  animation: 7s cloud-move-reverse infinite alternate linear;
-}
+    #about-page h3 {
+      margin-top: 0;
+    }
+
+    @keyframes cloud-move-reverse {
+      from {
+        transform: translate(446px, 48px);
+      }
+
+      to {
+        transform: translate(100px, 48px);
+      }
+    }
+
+    .cloud1 {
+      animation: 7s cloud-move-reverse infinite alternate linear;
+    }
+
+    .cloud2 {
+      animation: 7s cloud-move-reverse infinite alternate linear;
+    }
+
+    .tree {
+      animation: 4s color-change infinite alternate linear;
+    }
+
+    @keyframes color-change {
+      0% {
+        fill: #1d341a;
+      }
+
+      50% {
+        fill: #56994d;
+      }
+
+      100% {
+        fill: #b38600;
+      }

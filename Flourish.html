@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <title>Flourish Mobile Application</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-      <header>
-        <div class="container">
-          <picture>
-            <source srcset="img/Icons/AA_logo.png" media="(max-width:767px)" />
-            <img class="logo" src="img/Icons/AA_logo.png" alt="Alisha Logo" />
-          </picture>
-          <nav>
-            <ul class="navigation">
-              <li><a href="Index.html">Work</a></li>
-              <li><a href="Contact_Alisha.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+
+<head>
+  <script src="https://kit.fontawesome.com/e026a2f39b.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <title>Alisha Albada UX/UI Designer Boulder CO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavToggle">
+      <picture>
+        <source srcset="img/Icons/AA_logo.png" media="(max-width:767px)" />
+        <img class="logo" src="img/Icons/AA_logo.png" alt="Alisha Logo" />
+      </picture>
+      <nav>
+        <ul class="navigation">
+          <li><a href="Index.html">Work</a></li>
+          <li><a href="Contact_Alisha.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
         <main>
             <div class="container">
                 <div>
@@ -84,6 +91,7 @@
                 <p>&copy; 2021 Alisha Albada</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
