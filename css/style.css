@@ -86,8 +86,8 @@ a:active {
 
 .button1 {
   display: inline-block;
-  background-color: #0068B8;
-  color: #D4F1F4;
+  background-color: #FEE2BC;
+  color: #7E81AC;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -168,7 +168,7 @@ a:active {
 /* :::::::::::::::::::::::::::: header */
 .logo {
   max-width: 150px;
-  min-width: 641px; text-align: center;
+text-align: center;
 }
 
 .flourish {
@@ -177,7 +177,7 @@ a:active {
 }
 
 header {
-  background-color: #B1D4E0;
+  background-color: #000000;
   padding: 10px 0;
   padding-top: 10px;
   padding-right: 5px;
@@ -202,14 +202,14 @@ header {
   position: absolute;
   right: 0;
   top: 2px;
-  font-size: 20px;
+  font-size: 25px;
   padding-right: 0;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  padding: 0;
+  border-top: 0;
 }
 
 nav>ul {
@@ -225,7 +225,7 @@ nav>ul>li {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #F7EBFF;
+  color: #ffffff;
 }
 
 nav>ul>li>a:hover,
@@ -233,16 +233,6 @@ a:focus {
   color: #00B3D7;
   text-decoration: underline;
   /* Underlining when hovering over a link */
-}
-
-nav>ul>li>a:visited {
-  /* visited link */
-  color: #ffffff;
-}
-
-nav>ul>li>a:active {
-  /* selected link */
-  color: #0068B8;
 }
 
 /* :::::::::::::::::::::::::::: Footer */
@@ -256,7 +246,7 @@ footer .email {
 
 /* :::::::::::::::::::::::::::: Hero */
 #hero {
-  background-color: #D9E4EC;
+  background-color: #A9ADC8;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -357,9 +347,7 @@ footer .email {
   header {
     text-align: unset;
     padding: 20px 0 13px;
-
-    nav>ul>li {}
-
+}
     nav {
       width: auto;
       float: right;
