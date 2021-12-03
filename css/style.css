@@ -21,23 +21,18 @@ img {
 h1 {
   color: black;
   margin-left: 20px;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
   font-family: 'Roboto', sans-serif;
 }
-
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-}
-
 h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
-
 h3 {
   font-size: 1.75em;
   font-weight: 400;
@@ -168,7 +163,7 @@ a:active {
 /* :::::::::::::::::::::::::::: header */
 .logo {
   max-width: 150px;
-text-align: center;
+  text-align: center;
 }
 
 .flourish {
@@ -233,6 +228,13 @@ a:focus {
   color: #00B3D7;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+}
+/* :::::::::::::::::::::::::::Skills and Tools */
+.skills-tool-row h2 {
+  margin-bottom: 10px;
+}
+.skills-tool-row h3 {
+  margin-top: 0;
 }
 
 /* :::::::::::::::::::::::::::: Footer */
@@ -347,53 +349,54 @@ footer .email {
   header {
     text-align: unset;
     padding: 20px 0 13px;
-}
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px 0;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
     }
 
-    [class*="col-"] {
-      float: left;
-      padding: 10px 0;
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud1 {
+    animation: 7s cloud-move-reverse infinite alternate linear;
+  }
+
+  .cloud2 {
+    animation: 7s cloud-move-reverse infinite alternate linear;
+  }
+
+  .tree {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes color-change {
+    0% {
+      fill: #1d341a;
     }
 
-    #about-page h3 {
-      margin-top: 0;
+    50% {
+      fill: #56994d;
     }
 
-    @keyframes cloud-move-reverse {
-      from {
-        transform: translate(446px, 48px);
-      }
-
-      to {
-        transform: translate(100px, 48px);
-      }
+    100% {
+      fill: #b38600;
     }
-
-    .cloud1 {
-      animation: 7s cloud-move-reverse infinite alternate linear;
-    }
-
-    .cloud2 {
-      animation: 7s cloud-move-reverse infinite alternate linear;
-    }
-
-    .tree {
-      animation: 4s color-change infinite alternate linear;
-    }
-
-    @keyframes color-change {
-      0% {
-        fill: #1d341a;
-      }
-
-      50% {
-        fill: #56994d;
-      }
-
-      100% {
-        fill: #b38600;
-      }
