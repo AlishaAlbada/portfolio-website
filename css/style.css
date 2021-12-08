@@ -39,9 +39,22 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+.skills-tool-row {
+  border: 1px solid black;
+  padding: 15px;
+}
 
 .skills-tool-row h2 {
   margin-top: 0;
+}
+
+.skills-tool-row > div {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.skills-tools-headline {
+  margin-bottom: 25px;
 }
 
 h4 {
