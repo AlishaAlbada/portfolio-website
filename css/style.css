@@ -6,12 +6,9 @@ body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #0C2D48;
+  color: #0c2d48;
 }
 
 img {
@@ -39,6 +36,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 .skills-tool-row {
   border: 1px solid black;
   padding: 15px;
@@ -63,26 +61,23 @@ h4 {
 }
 
 a {
-  color: #05445E;
+  color: #05445e;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:hover,
 a:focus {
   color: #003453;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #0068B8;
+  color: #0068b8;
 }
 
 .button1:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -95,13 +90,13 @@ a:active {
 
 .button1.contact:hover {
   background-color: #4fc3f7;
-  color: #ffffff;
+  color: #fff;
 }
 
 .button1 {
   display: inline-block;
-  background-color: #FEE2BC;
-  color: #7E81AC;
+  background-color: #aeeed2;
+  color: #000;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -116,20 +111,20 @@ a:active {
 
 .button2.contact {
   background-color: transparent;
-  color: #FA8072;
+  color: #fa8072;
   text-transform: uppercase;
   border: 2px solid #663399;
 }
 
 .button2.contact:hover {
   background-color: #663399;
-  color: #ffffff;
+  color: #ffff;
 }
 
 .button2 {
   display: inline-block;
-  background-color: #05445E;
-  color: #FFFFFF;
+  background-color: #05445e;
+  color: #ffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -143,24 +138,24 @@ a:active {
 
 .button3.contact {
   background-color: transparent;
-  color: #B1D4E0;
+  color: #32a6cc;
   text-transform: uppercase;
-  border: 2px solid #2F4858;
+  border: 2px solid #2f4858;
 }
 
 .button3.contact:hover {
-  background-color: #663399;
-  color: #ffffff;
+  background-color: #32a6cc;
+  color: #ffff;
 }
 
 .button3 {
   display: inline-block;
-  background-color: #B1D4E0;
-  color: #FFFFFF;
+  background-color: #32a6cc;
+  color: #ffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #2F4858;
+  border-bottom: 2px solid #2f4858;
   transition: 0.2s opacity;
 }
 
@@ -170,7 +165,6 @@ a:active {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -186,12 +180,25 @@ a:active {
 }
 
 .flourish {
-  max-width: 400px;
+  max-width: 200px;
   text-align: center;
 }
 
+.flourishlogo {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.deskimg {
+  max-width: 500px;
+  padding-top: 20px;
+}
+
 header {
-  background-color: #000000;
+  background: rgb(174,211,238);
+  background: radial-gradient(circle, rgba(174,211,238,1) 31%, rgba(174,238,210,1) 54%, rgba(50,166,204,1) 99%);
   padding: 10px 0;
   padding-top: 10px;
   padding-right: 5px;
@@ -226,7 +233,7 @@ header {
   border-top: 0;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 1em 0;
@@ -234,19 +241,18 @@ nav>ul {
   padding-left: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   list-style-type: none;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffff;
 }
 
-nav>ul>li>a:hover,
+nav > ul > li > a:hover,
 a:focus {
   color: #00B3D7;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 /* :::::::::::::::::::::::::::Skills and Tools */
@@ -356,7 +362,7 @@ footer .email {
     width: 100%;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -421,3 +427,5 @@ footer .email {
     100% {
       fill: #b38600;
     }
+  }
+}
